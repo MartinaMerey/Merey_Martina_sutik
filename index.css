@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Schoolbell;
+  src:url(fonts/Schoolbell-Regular.ttf)
+}
+
+* {
+    margin-inline: 0;
+    box-sizing: border-box;
+    font-family: Schoolbell;
+}
+
+
+body {
+    background: url(background.png);   
+    background-repeat: no-repeat;
+    font-family: Schoolbell;
+    background-size: cover;
+    background-position: fixed;
+    padding-top:25px;
+    border-radius:15px 15px 0px 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-inline: 32px;
+    margin-block: 64px;
+}
+
+main {
+    max-width: 90vw;
+    max-height: calc(100vh-28px);
+    margin:auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: solid 3px black;
+
+
+}
+
+article {
+
+}
+
+/*2. feladat
+<main>:
+Maximum szélessége: 90vw
+Minimum magassága: calc(100vh - 128px);
+Legyen középre rendezett
+Háttérszíne fehér (#ffffff)
+Legyen lekerekítve a szélei 12px-re
+Állíts be neki a keretet 3px folytonosra és legyen fekete a színe!
+
+Importáld be az index.css-be a Schoolbell-Regular.ttf betűtípust és minden elemnek
+állítsd be az oldalon ezt a betűcsaládot
+
+3. feladat
+CSS grid
+<section>
+belső margó 32px
+
+Készítsd el a navigációt a mintának megfelelően
+gombok betűszíne: #8d5b1a;
+gombok háttere: #feda70;
+betűmérete: 20px
+belsőmargója: 0.5rem
+kerekítés 12px
+
+Alakítsd ki az oldal szövegezését a mintának megfelelően, Használd a szoveg.txt-t a forrásból!
+Használj gridet az oldal tartalmának rendezéséhez!
+
+Segítség:
+<h1>
+betűméret: 28px
+betű vastagság: 400
+<h2>
+betűméret: 56px
+betű vastagság: 400
+<p>
+betűméret: 24px
+max szélesség: 60ch
+betű vastagság: 400
+
+article {
+    height: fit-content;
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+}
+
+article img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+3. feladatben elkészült fejlesztéseket 
+commitold fel a következő üzenettel:
+"sütik - 3. feladat" 
+
+4. feladat 
+Alakítsd ki a táblázatot és a footert a mintának megfelelően!!!
+színek:
+#8d5b1a;
+#feda70;
+maximum szélesség 1080px
+
+
+5. feladat
+Töltsd fel gitre a projektet! és telepítsd ki a github pages-re*/
