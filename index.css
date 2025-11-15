@@ -31,59 +31,50 @@ main {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     border: solid 3px black;
-
-
+    width: 60vw;
 }
 
-article {
 
-}
-
-/*2. feladat
-<main>:
-Maximum szélessége: 90vw
-Minimum magassága: calc(100vh - 128px);
-Legyen középre rendezett
-Háttérszíne fehér (#ffffff)
-Legyen lekerekítve a szélei 12px-re
-Állíts be neki a keretet 3px folytonosra és legyen fekete a színe!
-
-Importáld be az index.css-be a Schoolbell-Regular.ttf betűtípust és minden elemnek
-állítsd be az oldalon ezt a betűcsaládot
-
-3. feladat
-CSS grid
-<section>
-belső margó 32px
-
-Készítsd el a navigációt a mintának megfelelően
-gombok betűszíne: #8d5b1a;
-gombok háttere: #feda70;
-betűmérete: 20px
-belsőmargója: 0.5rem
-kerekítés 12px
-
-Alakítsd ki az oldal szövegezését a mintának megfelelően, Használd a szoveg.txt-t a forrásból!
-Használj gridet az oldal tartalmának rendezéséhez!
-
-Segítség:
-<h1>
-betűméret: 28px
-betű vastagság: 400
-<h2>
-betűméret: 56px
-betű vastagság: 400
-<p>
-betűméret: 24px
-max szélesség: 60ch
-betű vastagság: 400
-
-article {
-    height: fit-content;
-    max-width: 1080px;
-    margin: auto;
+section {
+    padding: 32px;
     display: grid;
+
 }
+
+nav {
+    text-align: center;
+
+}
+
+.menu {
+    background-color:#feda70;
+    /*border: 2px solid #ffeb3b; /* yellow border */
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 12px;
+    border: solid 3px black;
+    color: #8d5b1a;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+h1 {
+font-size: 28px;
+font-weight: 400;
+}
+
+h2 {
+font-size: 56px;
+font-weight: 400;
+}
+
+p {
+font-size: 24px;
+max-width: 60ch;
+font-weight: 400;
+}
+
+
 
 article img {
   width: 100%;
@@ -91,17 +82,72 @@ article img {
   object-fit: cover;
 }
 
-3. feladatben elkészült fejlesztéseket 
-commitold fel a következő üzenettel:
-"sütik - 3. feladat" 
+table {
+    max-width: 90vw;
+    border: solid 3px black;
+    border-collapse:collapse;
+    margin:auto;
+    margin-top:30px;
+}
 
-4. feladat 
-Alakítsd ki a táblázatot és a footert a mintának megfelelően!!!
-színek:
-#8d5b1a;
-#feda70;
-maximum szélesség 1080px
+th {
+    
+    background-color:#8d5b1a;
+    color:#feda70;
+}
+
+td {
+    border: solid 3px black;
+}
 
 
-5. feladat
-Töltsd fel gitre a projektet! és telepítsd ki a github pages-re*/
+tr:nth-child(even){
+
+    background-color:#8d5b1a;
+    color:#feda70;
+}
+
+tr:nth-child(odd){
+    background-color:#feda70;
+    color:#000000;
+
+}
+
+article {
+
+    max-width: 1080px;
+    margin: auto;
+}
+
+.artgrid {
+    display: grid;
+    grid-template-columns: 3 fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "b" "b" "j";
+    gap: 1rem;
+}
+
+.bal {
+    display:grid; 
+    grid-area: b;
+
+}
+
+.jobb {
+    display: grid;
+    grid-area: j;
+
+    
+}
+
+footer {
+        background-color:#8d5b1a;
+    /*border: 2px solid #ffeb3b; /* yellow border */
+    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 12px;
+    border: solid 3px black;
+    color: #feda70;
+    margin: auto;
+}
