@@ -86,11 +86,14 @@ article img {
 }
 
 table {
-    max-width: 90vw;
+    /*max-width: 90vw;*/
     border: solid 3px black;
     border-collapse:collapse;
     margin:auto;
-    margin-top:30px;
+    width: 100%;
+    max-width: 60vw;
+    min-width: 50vw;
+    
 }
 
 th {
@@ -145,6 +148,7 @@ article {
 
 footer {
     background-color:#8d5b1a;
+    text-align: center;
     /*border: 2px solid #ffeb3b; /* yellow border */
     padding: 0.5rem;
     display: inline-block;
@@ -152,6 +156,7 @@ footer {
     border: solid 3px black;
     color: #feda70;
     margin: auto;
-    width: 100%
-    margin-bottom: 32px;
+    width: 100%;
+    max-width: 60vw;
+    min-width: 50vw;
 }
