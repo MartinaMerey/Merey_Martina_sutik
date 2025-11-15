@@ -26,6 +26,7 @@ body {
 
 main {
     max-width: 90vw;
+    min-width: 80vw;
     max-height: calc(100vh-28px);
     margin:auto;
     background-color: rgb(255, 255, 255);
@@ -36,8 +37,11 @@ main {
 
 
 section {
+    max-width: 60vw;
+    min-width: 50vw;
     padding: 32px;
     display: grid;
+    margin:auto;
 
 }
 
@@ -78,7 +82,7 @@ font-weight: 400;
 
 article img {
   width: 100%;
-  height: 550px;
+  height:500px;
   object-fit: cover;
 }
 
@@ -114,35 +118,34 @@ tr:nth-child(odd){
 }
 
 article {
-
     max-width: 1080px;
     margin: auto;
 }
 
 .artgrid {
     display: grid;
-    grid-template-columns: 3 fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "b" "b" "j";
+    "b b j";
     gap: 1rem;
 }
 
 .bal {
-    display:grid; 
     grid-area: b;
 
 }
 
 .jobb {
-    display: grid;
-    grid-area: j;
+    grid-area: j;  
+}
 
-    
+.kep{
+    max-width: fit-content;
 }
 
 footer {
-        background-color:#8d5b1a;
+    background-color:#8d5b1a;
     /*border: 2px solid #ffeb3b; /* yellow border */
     padding: 0.5rem;
     display: inline-block;
@@ -150,4 +153,6 @@ footer {
     border: solid 3px black;
     color: #feda70;
     margin: auto;
+    width: 100%
+    margin-bottom: 32px;
 }
